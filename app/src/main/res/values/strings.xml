@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SerialPort</string>
+    <string-array name="serial">
+        <item>/dev/ttyS0</item>
+        <item>/dev/ttyS1</item>
+        <item>/dev/ttyS2</item>
+        <item>/dev/ttyS3</item>
+        <item>/dev/ttyS4</item>
+        <item>/dev/ttymxc0</item>
+        <item>/dev/ttymxc1</item>
+        <item>/dev/ttymxc2</item>
+        <item>/dev/ttymxc3</item>
+        <item>/dev/ttymxc4</item>
+        <item>/dev/ttyUSB0</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.serialport.api.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tvReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收数据:0"
+        app:layout_constraintBottom_toTopOf="@+id/edRecv"
+        app:layout_constraintStart_toStartOf="@+id/edRecv"
+        app:layout_constraintTop_toBottomOf="@+id/btSelect" />
+
+    <EditText
+        android:id="@+id/edRecv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="#fffffaf2"
+        android:ems="10"
+        android:gravity="left|center|top"
+        android:hint="接收区"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/tvSend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReceive" />
+
+    <TextView
+        android:id="@+id/tvSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="16dp"
+        android:text="发送数据:0"
+        app:layout_constraintBottom_toTopOf="@+id/edSend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edRecv" />
+
+    <EditText
+        android:id="@+id/edSend"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="#fffffaf2"
+        android:ems="10"
+        android:gravity="left|center|top"
+        android:hint="发送区"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btSend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSend" />
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:layout_marginStart="16dp"
+        android:text="发送"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSend" />
+
+    <Button
+        android:id="@+id/btSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="串口选择"
+        app:layout_constraintBottom_toTopOf="@+id/tvReceive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="清屏"
+        app:layout_constraintBottom_toBottomOf="@+id/btSend"
+        app:layout_constraintStart_toEndOf="@+id/btSend" />
+</android.support.constraint.ConstraintLayout>
